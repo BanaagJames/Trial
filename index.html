@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
+<!-- MOBILE VIEWPORT -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Aubrey Banaag Debut Invitation</title>
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
 font-family:Georgia,serif;
 background:linear-gradient(-45deg,#ff9ecb,#ffd6eb,#fff,#ffe9f5);
 background-size:400% 400%;
 animation:gradient 15s ease infinite;
-cursor:none;
 overflow-x:hidden;
 text-align:center;
+padding:20px;
 }
+
+/* BACKGROUND */
 
 @keyframes gradient{
 0%{background-position:0% 50%}
@@ -25,80 +35,76 @@ text-align:center;
 }
 
 section{
-padding:80px 20px;
+padding:50px 10px;
 }
 
-/* OPENING SCREEN */
+/* OPEN SCREEN */
 
 .invite-photo{
-width:60vw;
-max-width:300px;
+width:85%;
+max-width:320px;
+margin-top:80px;
 cursor:pointer;
-margin-top:120px;
+border-radius:12px;
 }
 
 .click-open{
 font-family:'Brush Script MT',cursive;
 font-style:italic;
-font-size:50px;
+font-size:32px;
 color:#ff69b4;
-margin-top:10px;
+margin-top:15px;
 }
 
 .click-invited{
 font-family:'Brush Script MT',cursive;
 font-style:italic;
-font-size:100px;
-color:#ff69b4;
-position:absolute;
-top:50px;
-left:50%;
-transform:translateX(-50%);
+font-size:48px;
+color:#ff1493;
+margin-bottom:30px;
 }
 
 /* HERO */
 
 .hero-title{
-font-family:'Brush Script MT', cursive;
+font-family:'Brush Script MT',cursive;
 font-style:italic;
-font-size:90px;
-margin-bottom:10px;
+font-size:56px;
 color:#ff1493;
-font-weight:bold;
-text-transform:none; /* ensures lowercase stays */
+margin-bottom:10px;
 }
 
 .hero-subtitle{
-font-size:36px;
-letter-spacing:3px;
-margin-bottom:10px;
+font-size:22px;
+letter-spacing:2px;
+margin-bottom:8px;
 }
 
 .hero-date{
-font-size:24px;
-margin-bottom:40px;
+font-size:18px;
+margin-bottom:25px;
 }
 
 .hero-photo{
-width:60vw;
-max-width:600px;
+width:100%;
+max-width:400px;
 margin:auto;
-display:block;
+border-radius:12px;
 }
 
 /* INVITE TEXT */
 
 .invite-text{
-font-size:26px;
+font-size:20px;
 line-height:1.6;
-margin-bottom:40px;
+margin-bottom:30px;
+padding:0 10px;
 }
 
 .debut-name{
 font-family:'Brush Script MT',cursive;
-font-size:60px;
+font-size:36px;
 color:#ff1493;
-font-weight:bold;
 }
 
 /* COUNTDOWN */
@@ -106,138 +112,128 @@ font-weight:bold;
 .countdown{
 display:flex;
 justify-content:center;
-gap:15px;
-margin-top:30px;
+gap:8px;
 flex-wrap:wrap;
-align-items:center;
+margin-top:20px;
 }
 
 .time-box{
-border:3px solid #d63384;
-padding:20px 25px;
-border-radius:12px;
-min-width:90px;
+border:2px solid #d63384;
+padding:12px;
+border-radius:10px;
+min-width:70px;
 background:white;
 }
 
 .time-number{
-font-size:36px;
+font-size:22px;
 font-weight:bold;
 }
 
 .time-label{
-font-size:14px;
-letter-spacing:1px;
+font-size:10px;
 }
 
 .colon{
-font-size:40px;
+font-size:22px;
 font-weight:bold;
 color:#ff1493;
-display:flex;
-align-items:center;
 }
 
 /* LOCATION */
 
 .location-title{
-font-size:32px;
-margin-bottom:40px;
-font-weight:bold;
+font-size:26px;
+margin-bottom:20px;
 }
 
 .map{
 width:100%;
-max-width:800px;
-height:500px;
+height:280px;
 border:0;
-margin:auto;
-display:block;
+border-radius:10px;
 }
 
 /* PANELS */
 
 .panels{
 display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-margin-top:60px;
+flex-direction:column;
+gap:20px;
+margin-top:30px;
+align-items:center;
 }
 
 .panel{
-width:260px;
+width:90%;
+max-width:350px;
 background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-text-align:center;
+padding:15px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .panel img{
 width:100%;
-height:200px;
-object-fit:cover;
+height:auto;
 border-radius:10px;
 }
 
-.venue-text{
-font-size:22px;
-line-height:1.6;
-text-align:center;
-}
-
 .venue-text h6{
-font-size:24px;
-margin-bottom:10px;
+font-size:18px;
+margin-bottom:6px;
 }
 
 .venue-text h5{
-font-size:20px;
+font-size:16px;
 }
 
 /* DRESS CODE */
 
 .dress-title{
-font-size:40px;
-margin-bottom:20px;
+font-size:30px;
+margin-bottom:15px;
 }
 
 .dress-sub{
-font-size:20px;
-max-width:800px;
-margin:auto;
+font-size:16px;
 line-height:1.6;
+padding:0 15px;
+}
+
+.dress-img{
+width:90%;
+max-width:350px;
+margin-top:25px;
+border-radius:12px;
 }
 
 /* FINAL PHOTO */
 
 .final-photo{
-width:900vw;
-max-width:900px;
-display:block;
-margin:auto;
+width:100%;
+max-width:420px;
 border-radius:12px;
 }
 
 /* THANK YOU */
 
 .thank-title{
-font-size:45px;
+font-size:32px;
 color:#ff1493;
 margin-bottom:20px;
 }
 
 .thank-text{
-font-size:22px;
-max-width:850px;
-margin:auto;
-line-height:1.8;
-text-align: justify;
-
+font-size:16px;
+line-height:1.7;
+padding:0 15px;
+text-align:justify;
 }
 
-.hidden{display:none}
+.hidden{
+display:none;
+}
 
 </style>
 </head>
@@ -248,11 +244,12 @@ text-align: justify;
 
 <img src="openingphoto.png" class="invite-photo" onclick="openInvite()">
 
-<div class="click-open">Click to Open</div>
+<div class="click-open">Tap to Open</div>
 
 <div id="content" class="hidden">
 
 <!-- HERO -->
+
 <section>
 
 <div class="hero-title">Aubrey's</div>
@@ -263,7 +260,7 @@ text-align: justify;
 
 </section>
 
-<!-- INVITATION TEXT -->
+<!-- INVITE TEXT -->
 
 <section>
 
@@ -307,14 +304,13 @@ FRIDAY, AUGUST 21, 2026
 
 </section>
 
-<!-- LOCATION GUIDE -->
+<!-- LOCATION -->
 
 <section>
 
 <div class="location-title">LOCATION GUIDE</div>
 
-<iframe
-class="map"
+<iframe class="map"
 src="https://maps.google.com/maps?q=Zyrene%20Private%20Resort%20Pila%20Laguna&t=&z=15&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
@@ -327,24 +323,17 @@ src="https://maps.google.com/maps?q=Zyrene%20Private%20Resort%20Pila%20Laguna&t=
 <div class="panels">
 
 <div class="panel">
-
 <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/maps/search/Zyrene+Private+Resort+Pila+Laguna">
-
 </div>
 
 <div class="panel venue-text">
-
-<h6>VENUE</h6>
-<h6>6:00 PM</h6>
+<h6>VENUE | 6:00 PM</h6>
 <h5>Zyrene Private Resort</h5>
 <h5>694G+JR Calumpang, Pila, Laguna</h5>
-
 </div>
 
 <div class="panel">
-
-<img src="resortpic.jpg" alt="Zyrene Private Resort">
-
+<img src="resortpic.jpg">
 </div>
 
 </div>
@@ -362,16 +351,14 @@ WE KINDLY ENCOURAGE YOU TO DRESS IN SEMI FORMAL ATTIRE
 ACCORDING TO THE THEME
 </p>
 
-<img src="dresscode.png" style="width:70%;max-width:600px;margin-top:40px;border-radius:12px;">
+<img src="dresscode.png" class="dress-img">
 
 </section>
 
 <!-- FINAL PHOTO -->
 
 <section>
-
 <img src="mainphoto2.png" class="final-photo">
-
 </section>
 
 <!-- THANK YOU -->
@@ -381,7 +368,6 @@ ACCORDING TO THE THEME
 <div class="thank-title">A Heartfelt Thank You</div>
 
 <p class="thank-text">
-
 With great joy and gratitude, we warmly thank you for being part of this
 very special milestone in Aubrey's life.
 
@@ -390,9 +376,6 @@ together to celebrate her beautiful journey into adulthood.
 
 May this evening be filled with laughter, wonderful memories,
 and heartfelt moments shared with family and friends.
-
-We truly appreciate you taking the time to celebrate this
-meaningful occasion with us.
 
 <br><br>
 
@@ -439,39 +422,6 @@ document.getElementById("minutes").innerHTML=minutes
 document.getElementById("seconds").innerHTML=seconds
 
 },1000)
-
-/* PIXIE DUST CURSOR */
-
-document.addEventListener('mousemove',function(e){
-
-const sparkle=document.createElement('div')
-
-const size=Math.random()*12+8
-
-sparkle.style.position='absolute'
-sparkle.style.width=size+'px'
-sparkle.style.height=size+'px'
-sparkle.style.background='radial-gradient(circle, rgba(255,182,193,1), rgba(255,182,193,0))'
-sparkle.style.borderRadius='50%'
-sparkle.style.left=e.pageX+'px'
-sparkle.style.top=e.pageY+'px'
-sparkle.style.pointerEvents='none'
-sparkle.style.opacity=1
-sparkle.style.transition='all 1.2s linear'
-
-document.body.appendChild(sparkle)
-
-setTimeout(()=>{
-sparkle.style.top=(e.pageY+Math.random()*50-25)+'px'
-sparkle.style.left=(e.pageX+Math.random()*50-25)+'px'
-sparkle.style.opacity=0
-},0)
-
-setTimeout(()=>{
-sparkle.remove()
-},1200)
-
-})
 
 </script>
 
