@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aubrey Banaag Debut Invitation</title>
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(-45deg,#ff9ecb,#ffd6eb,#fff,#ffe9f5);
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+cursor:none;
+overflow-x:hidden;
+text-align:center;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+section{
+padding:80px 20px;
+}
+
+/* OPENING SCREEN */
+
+.invite-photo{
+width:60vw;
+max-width:300px;
+cursor:pointer;
+margin-top:120px;
+}
+
+.click-open{
+font-family:'Brush Script MT',cursive;
+font-style:italic;
+font-size:50px;
+color:#ff69b4;
+margin-top:10px;
+}
+
+.click-invited{
+font-family:'Brush Script MT',cursive;
+font-style:italic;
+font-size:100px;
+color:#ff69b4;
+position:absolute;
+top:50px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* HERO */
+
+.hero-title{
+font-family:'Brush Script MT', cursive;
+font-style:italic;
+font-size:90px;
+margin-bottom:10px;
+color:#ff1493;
+font-weight:bold;
+text-transform:none; /* ensures lowercase stays */
+}
+
+.hero-subtitle{
+font-size:36px;
+letter-spacing:3px;
+margin-bottom:10px;
+}
+
+.hero-date{
+font-size:24px;
+margin-bottom:40px;
+}
+
+.hero-photo{
+width:60vw;
+max-width:600px;
+margin:auto;
+display:block;
+}
+
+/* INVITE TEXT */
+
+.invite-text{
+font-size:26px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+.debut-name{
+font-family:'Brush Script MT',cursive;
+font-size:60px;
+color:#ff1493;
+font-weight:bold;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+flex-wrap:wrap;
+align-items:center;
+}
+
+.time-box{
+border:3px solid #d63384;
+padding:20px 25px;
+border-radius:12px;
+min-width:90px;
+background:white;
+}
+
+.time-number{
+font-size:36px;
+font-weight:bold;
+}
+
+.time-label{
+font-size:14px;
+letter-spacing:1px;
+}
+
+.colon{
+font-size:40px;
+font-weight:bold;
+color:#ff1493;
+display:flex;
+align-items:center;
+}
+
+/* LOCATION */
+
+.location-title{
+font-size:32px;
+margin-bottom:40px;
+font-weight:bold;
+}
+
+.map{
+width:100%;
+max-width:800px;
+height:500px;
+border:0;
+margin:auto;
+display:block;
+}
+
+/* PANELS */
+
+.panels{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:60px;
+}
+
+.panel{
+width:260px;
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.panel img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.venue-text{
+font-size:22px;
+line-height:1.6;
+text-align:center;
+}
+
+.venue-text h6{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.venue-text h5{
+font-size:20px;
+}
+
+/* DRESS CODE */
+
+.dress-title{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.dress-sub{
+font-size:20px;
+max-width:800px;
+margin:auto;
+line-height:1.6;
+}
+
+/* FINAL PHOTO */
+
+.final-photo{
+width:900vw;
+max-width:900px;
+display:block;
+margin:auto;
+border-radius:12px;
+}
+
+/* THANK YOU */
+
+.thank-title{
+font-size:45px;
+color:#ff1493;
+margin-bottom:20px;
+}
+
+.thank-text{
+font-size:22px;
+max-width:850px;
+margin:auto;
+line-height:1.8;
+text-align: justify;
+
+}
+
+.hidden{display:none}
+
+</style>
+</head>
+
+<body>
+
+<div class="click-invited">You're Invited</div>
+
+<img src="openingphoto.png" class="invite-photo" onclick="openInvite()">
+
+<div class="click-open">Click to Open</div>
+
+<div id="content" class="hidden">
+
+<!-- HERO -->
+<section>
+
+<div class="hero-title">Aubrey's</div>
+<div class="hero-subtitle">Midnight Reverie XVIII</div>
+<div class="hero-date">08.21.26</div>
+
+<img src="mainphoto.png" class="hero-photo">
+
+</section>
+
+<!-- INVITATION TEXT -->
+
+<section>
+
+<div class="invite-text">
+YOU'RE INVITED TO THE DEBUT OF<br>
+
+<span class="debut-name">Aubrey Lina Banaag</span><br>
+
+FRIDAY, AUGUST 21, 2026
+</div>
+
+<div class="countdown">
+
+<div class="time-box">
+<div id="days" class="time-number">0</div>
+<div class="time-label">DAYS</div>
+</div>
+
+<div class="colon">:</div>
+
+<div class="time-box">
+<div id="hours" class="time-number">0</div>
+<div class="time-label">HOURS</div>
+</div>
+
+<div class="colon">:</div>
+
+<div class="time-box">
+<div id="minutes" class="time-number">0</div>
+<div class="time-label">MINUTES</div>
+</div>
+
+<div class="colon">:</div>
+
+<div class="time-box">
+<div id="seconds" class="time-number">0</div>
+<div class="time-label">SECONDS</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- LOCATION GUIDE -->
+
+<section>
+
+<div class="location-title">LOCATION GUIDE</div>
+
+<iframe
+class="map"
+src="https://maps.google.com/maps?q=Zyrene%20Private%20Resort%20Pila%20Laguna&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<!-- PANELS -->
+
+<section>
+
+<div class="panels">
+
+<div class="panel">
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/maps/search/Zyrene+Private+Resort+Pila+Laguna">
+
+</div>
+
+<div class="panel venue-text">
+
+<h6>VENUE</h6>
+<h6>6:00 PM</h6>
+<h5>Zyrene Private Resort</h5>
+<h5>694G+JR Calumpang, Pila, Laguna</h5>
+
+</div>
+
+<div class="panel">
+
+<img src="resortpic.jpg" alt="Zyrene Private Resort">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DRESS CODE -->
+
+<section>
+
+<div class="dress-title">DRESS CODE</div>
+
+<p class="dress-sub">
+WE KINDLY ENCOURAGE YOU TO DRESS IN SEMI FORMAL ATTIRE
+ACCORDING TO THE THEME
+</p>
+
+<img src="dresscode.png" style="width:70%;max-width:600px;margin-top:40px;border-radius:12px;">
+
+</section>
+
+<!-- FINAL PHOTO -->
+
+<section>
+
+<img src="mainphoto2.png" class="final-photo">
+
+</section>
+
+<!-- THANK YOU -->
+
+<section>
+
+<div class="thank-title">A Heartfelt Thank You</div>
+
+<p class="thank-text">
+
+With great joy and gratitude, we warmly thank you for being part of this
+very special milestone in Aubrey's life.
+
+Your presence at her debut celebration means so much to us as we gather
+together to celebrate her beautiful journey into adulthood.
+
+May this evening be filled with laughter, wonderful memories,
+and heartfelt moments shared with family and friends.
+
+We truly appreciate you taking the time to celebrate this
+meaningful occasion with us.
+
+<br><br>
+
+With love and gratitude,<br>
+<b>The Banaag Family</b>
+
+</p>
+
+</section>
+
+</div>
+
+<script>
+
+/* OPEN INVITATION */
+
+function openInvite(){
+
+document.querySelector(".invite-photo").style.display="none"
+document.querySelector(".click-open").style.display="none"
+document.querySelector(".click-invited").style.display="none"
+
+document.getElementById("content").classList.remove("hidden")
+
+}
+
+/* COUNTDOWN */
+
+var eventDate=new Date("Aug 21, 2026 18:00:00").getTime()
+
+setInterval(function(){
+
+var now=new Date().getTime()
+var diff=eventDate-now
+
+var days=Math.floor(diff/(1000*60*60*24))
+var hours=Math.floor((diff%(1000*60*60*24))/(1000*60*60))
+var minutes=Math.floor((diff%(1000*60*60))/(1000*60))
+var seconds=Math.floor((diff%(1000*60))/1000)
+
+document.getElementById("days").innerHTML=days
+document.getElementById("hours").innerHTML=hours
+document.getElementById("minutes").innerHTML=minutes
+document.getElementById("seconds").innerHTML=seconds
+
+},1000)
+
+/* PIXIE DUST CURSOR */
+
+document.addEventListener('mousemove',function(e){
+
+const sparkle=document.createElement('div')
+
+const size=Math.random()*12+8
+
+sparkle.style.position='absolute'
+sparkle.style.width=size+'px'
+sparkle.style.height=size+'px'
+sparkle.style.background='radial-gradient(circle, rgba(255,182,193,1), rgba(255,182,193,0))'
+sparkle.style.borderRadius='50%'
+sparkle.style.left=e.pageX+'px'
+sparkle.style.top=e.pageY+'px'
+sparkle.style.pointerEvents='none'
+sparkle.style.opacity=1
+sparkle.style.transition='all 1.2s linear'
+
+document.body.appendChild(sparkle)
+
+setTimeout(()=>{
+sparkle.style.top=(e.pageY+Math.random()*50-25)+'px'
+sparkle.style.left=(e.pageX+Math.random()*50-25)+'px'
+sparkle.style.opacity=0
+},0)
+
+setTimeout(()=>{
+sparkle.remove()
+},1200)
+
+})
+
+</script>
+
+</body>
+</html>
