@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
 
-<!-- MOBILE VIEWPORT -->
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Aubrey Banaag Debut Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -25,8 +26,6 @@ overflow-x:hidden;
 text-align:center;
 padding:20px;
 }
-
-/* BACKGROUND */
 
 @keyframes gradient{
 0%{background-position:0% 50%}
@@ -57,27 +56,31 @@ margin-top:15px;
 }
 
 .click-invited{
-font-family:'Brush Script MT',cursive;
-font-style:italic;
-font-size:48px;
+font-family:'Playfair Display',serif;
+font-size:44px;
 color:#ff1493;
 margin-bottom:30px;
+letter-spacing:2px;
 }
 
 /* HERO */
 
 .hero-title{
-font-family:'Brush Script MT',cursive;
-font-style:italic;
-font-size:56px;
+font-family:'Playfair Display',serif;
+font-size:52px;
 color:#ff1493;
 margin-bottom:10px;
+letter-spacing:3px;
+font-weight:bold;
+text-transform:uppercase;
 }
 
 .hero-subtitle{
+font-family:'Playfair Display',serif;
 font-size:22px;
-letter-spacing:2px;
+letter-spacing:4px;
 margin-bottom:8px;
+text-transform:uppercase;
 }
 
 .hero-date{
@@ -102,8 +105,8 @@ padding:0 10px;
 }
 
 .debut-name{
-font-family:'Brush Script MT',cursive;
-font-size:36px;
+font-family:'Playfair Display',serif;
+font-size:34px;
 color:#ff1493;
 }
 
@@ -240,7 +243,7 @@ display:none;
 
 <body>
 
-<div class="click-invited">You're Invited</div>
+<div class="click-invited">YOU'RE INVITED</div>
 
 <img src="openingphoto.png" class="invite-photo" onclick="openInvite()">
 
@@ -252,8 +255,8 @@ display:none;
 
 <section>
 
-<div class="hero-title">Aubrey's</div>
-<div class="hero-subtitle">Midnight Reverie XVIII</div>
+<div class="hero-title">AUBREY'S</div>
+<div class="hero-subtitle">MIDNIGHT REVERIE XVIII</div>
 <div class="hero-date">08.21.26</div>
 
 <img src="mainphoto.png" class="hero-photo">
@@ -267,7 +270,7 @@ display:none;
 <div class="invite-text">
 YOU'RE INVITED TO THE DEBUT OF<br>
 
-<span class="debut-name">Aubrey Lina Banaag</span><br>
+<span class="debut-name">AUBREY LINA BANAAG</span><br>
 
 FRIDAY, AUGUST 21, 2026
 </div>
@@ -368,6 +371,7 @@ ACCORDING TO THE THEME
 <div class="thank-title">A Heartfelt Thank You</div>
 
 <p class="thank-text">
+
 With great joy and gratitude, we warmly thank you for being part of this
 very special milestone in Aubrey's life.
 
@@ -390,8 +394,6 @@ With love and gratitude,<br>
 
 <script>
 
-/* OPEN INVITATION */
-
 function openInvite(){
 
 document.querySelector(".invite-photo").style.display="none"
@@ -401,8 +403,6 @@ document.querySelector(".click-invited").style.display="none"
 document.getElementById("content").classList.remove("hidden")
 
 }
-
-/* COUNTDOWN */
 
 var eventDate=new Date("Aug 21, 2026 18:00:00").getTime()
 
