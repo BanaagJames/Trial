@@ -7,8 +7,6 @@
 
 <title>Aubrey Banaag Debut Invitation</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-
 <style>
 
 *{
@@ -40,59 +38,12 @@ padding:50px 10px;
 /* OPEN SCREEN */
 
 .invite-photo{
-width:85%;
-max-width:320px;
-margin-top:80px;
-cursor:pointer;
-border-radius:12px;
-}
-
-.click-open{
-font-family:'Brush Script MT',cursive;
-font-style:italic;
-font-size:32px;
-color:#ff69b4;
-margin-top:15px;
-}
-
-.click-invited{
-font-family:'Playfair Display',serif;
-font-size:44px;
-color:#ff1493;
-margin-bottom:30px;
-letter-spacing:2px;
-}
-
-/* HERO */
-
-.hero-title{
-font-family:'Playfair Display',serif;
-font-size:52px;
-color:#ff1493;
-margin-bottom:10px;
-letter-spacing:3px;
-font-weight:bold;
-text-transform:uppercase;
-}
-
-.hero-subtitle{
-font-family:'Playfair Display',serif;
-font-size:22px;
-letter-spacing:4px;
-margin-bottom:8px;
-text-transform:uppercase;
-}
-
-.hero-date{
-font-size:18px;
-margin-bottom:25px;
-}
-
-.hero-photo{
 width:100%;
-max-width:400px;
-margin:auto;
-border-radius:12px;
+max-width:100%;
+height:100vh;
+object-fit:cover;
+cursor:pointer;
+border-radius:0;
 }
 
 /* INVITE TEXT */
@@ -243,27 +194,11 @@ display:none;
 
 <body>
 
-<div class="click-invited">YOU'RE INVITED</div>
-
-<img src="openingphoto.png" class="invite-photo" onclick="openInvite()">
-
-<div class="click-open">Tap to Open</div>
+<img src="official.png" class="invite-photo" onclick="openInvite()">
 
 <div id="content" class="hidden">
 
-<!-- HERO -->
-
-<section>
-
-<div class="hero-title">AUBREY'S</div>
-<div class="hero-subtitle">MIDNIGHT REVERIE XVIII</div>
-<div class="hero-date">08.21.26</div>
-
-<img src="mainphoto.png" class="hero-photo">
-
-</section>
-
-<!-- INVITE TEXT -->
+<!-- INVITATION TEXT -->
 
 <section>
 
@@ -397,9 +332,6 @@ With love and gratitude,<br>
 function openInvite(){
 
 document.querySelector(".invite-photo").style.display="none"
-document.querySelector(".click-open").style.display="none"
-document.querySelector(".click-invited").style.display="none"
-
 document.getElementById("content").classList.remove("hidden")
 
 }
